@@ -1,0 +1,39 @@
+<div class="todo-list-container">
+  <h2 class="todo-list-heading">Todo List</h2>
+  <div class="filter-container">
+    <select [(ngModel)]="filter" (change)="onFilterChange($event)">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+  </div>
+  <div class="search-container">
+    <input type="text" [(ngModel)]="searchQuery" (input)="onSearchInputChange()" placeholder="Search todo items">
+  </div>
+  <ul class="todo-list">
+    <li *ngFor="let todoItem of filteredTodoItems" class="todo-item">
+      <div *ngIf="editingTodoItem && editingTodoItem.id === todoItem.id">
+        <input type="text" [(ngModel)]="editingTodoItem.title">
+        <button class="save-button" (click)="saveEditedTodoItem()">Save</button>
+        <button class="cancel-button" (click)="cancelEdit()">Cancel</button>
+      </div>
+      <div *ngIf="!editingTodoItem || editingTodoItem.id !== todoItem.id">
+        <app-todo-item [todoItem]="todoItem"></app-todo-item>
+        <button class="edit-button" (click)="editTodoItem(todoItem)">Edit</button>
+        <button class="delete-button" (click)="deleteTodoItem(todoItem.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+  <div class="add-todo-item">
+    <input type="text" [(ngModel)]="newTodoItem.title" placeholder="Add new todo item">
+    <button (click)="addTodoItem()">Add</button>
+  </div>
+</div>
+
+
+
+
+
+
+  
+  
