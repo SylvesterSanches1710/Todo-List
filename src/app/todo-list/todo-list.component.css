@@ -1,7 +1,7 @@
 .todo-list-container {
   width: 400px;
   margin: 0 auto;
-  background-color: #bdbdbd;
+  background-color: #9989d7;
 }
 
 .todo-list-heading {
@@ -64,6 +64,9 @@
 
 .add-todo-item {
   margin-top: 20px;
+}
+.add-todo-item:hover {
+  background-color: #f9f9f9;
 }
 
 .add-todo-item input[type="text"] {
