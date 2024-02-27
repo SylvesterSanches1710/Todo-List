@@ -64,26 +64,61 @@
 
 .add-todo-item {
   margin-top: 20px;
+  position: relative;
 }
-.add-todo-item:hover {
-  background-color: #f9f9f9;
+
+.add-todo-item:hover input[type="text"] {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .add-todo-item input[type="text"] {
-  width: 70%;
+  width: calc(100% - 70px);
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--accent-color);
+  transition: border-color 0.3s ease;
+}
+
+.add-todo-item input[type="text"]:hover {
+  border-color: #ccc;
+}
+
+.add-todo-item input[type="text"]:focus {
+  border-color: var(--accent-color);
+}
+
+.add-todo-item input[type="text"]:focus + button {
+  background-color: #f9ca24;
 }
 
 .add-todo-item button {
-  padding: 10px;
-  background-color: #008CBA;
-  color: white;
+  margin-top: 10px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.add-todo-item button:hover {
+  background-color: #f9ca24;
+  transform: translateY(-2px);
+}
+
+.add-todo-item button:focus {
+  outline: none;
+}
+
+.add-todo-item button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
 
 .edit-button:hover,
 .delete-button:hover {
