@@ -1,15 +1,24 @@
-<div class="todo-list-container">
+<div>
   <h2 class="todo-list-heading">Todo List</h2>
-  <div class="filter-container">
-    <select [(ngModel)]="filter" (change)="onFilterChange($event)">
-      <option value="all">All</option>
-      <option value="completed">Completed</option>
-      <option value="pending">Pending</option>
-    </select>
+  <div class="add-todo-item">
+    <input type="text" [(ngModel)]="newTodoItem.title" placeholder="Add new todo item">
+    <button (click)="addTodoItem()" class="add-button">Add</button>
   </div>
-  <div class="search-container">
-    <input type="text" [(ngModel)]="searchQuery" (input)="onSearchInputChange()" placeholder="Search todo items">
+
+  <div class="filter-search-container">
+    <div class="filter-container">
+      <h3 class="filter-subheading">Filter</h3>
+      <select [(ngModel)]="filter" (change)="onFilterChange($event)">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </div>
+    <div class="search-container">
+      <input type="text" [(ngModel)]="searchQuery" (input)="onSearchInputChange()" placeholder="Search todo items">
+    </div>
   </div>
+  
   <ul class="todo-list">
     <li *ngFor="let todoItem of filteredTodoItems" class="todo-item">
       <div *ngIf="editingTodoItem && editingTodoItem.id === todoItem.id">
@@ -24,11 +33,9 @@
       </div>
     </li>
   </ul>
-  <div class="add-todo-item">
-    <input type="text" [(ngModel)]="newTodoItem.title" placeholder="Add new todo item">
-    <button (click)="addTodoItem()">Add</button>
-  </div>
 </div>
+
+
 
 
 
