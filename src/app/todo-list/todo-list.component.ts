@@ -60,7 +60,7 @@ export class TodoListComponent implements OnInit {
         .subscribe(todoItem => {
           this.todoItems.push(todoItem);
           this.applyFilter();
-          this.newTodoItem = { id: this.newTodoItem.id + 1, title: '', done: false }; // Reset newTodoItem after adding
+          this.newTodoItem = { id: this.newTodoItem.id + 1, title: '', done: false }; 
         });
     }
   }

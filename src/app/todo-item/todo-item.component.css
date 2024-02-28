@@ -20,17 +20,14 @@
 }
 
 
-/* todo-item.component.css */
-
-/* Style the date input */
 .todo-item input[type="date"] {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fff; /* Change background color if needed */
-  color: #333; /* Change text color if needed */
-  font-size: 14px; /* Change font size if needed */
-  outline: none; /* Remove default focus outline */
+  background-color: #fff; 
+  color: #333;
+  font-size: 14px; 
+  outline: none; 
   transition: border-color 0.3s ease;
   margin-left: 40px;
 }
