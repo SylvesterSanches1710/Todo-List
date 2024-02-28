@@ -8,12 +8,12 @@
     {
       "id": "75f1",
       "title": "Red Dead Redemption II",
-      "done": true
+      "done": false
     },
     {
       "id": "6904",
       "title": "Last Of Us",
-      "done": true
+      "done": false
     },
     {
       "id": "7905",
@@ -23,7 +23,7 @@
     {
       "id": "b496",
       "title": "Fortnite",
-      "done": false
+      "done": true
     }
   ]
 }

@@ -42,11 +42,19 @@
   border-radius: 5px;
 }
 
-.edit-button,
-.delete-button {
+.edit-button {
   margin-left: 10px;
   padding: 5px 10px;
   background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f34d4d;
   color: white;
   border: none;
   border-radius: 3px;
@@ -192,13 +200,22 @@
   }
 }
 
-.save-button,
-.cancel-button {
+.save-button{
   margin-left: 10px;
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
   background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cancel-button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f34d4d;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
