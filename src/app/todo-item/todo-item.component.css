@@ -20,22 +20,6 @@
 }
 
 
-.todo-item input[type="date"] {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff; 
-  color: #333;
-  font-size: 14px; 
-  outline: none; 
-  transition: border-color 0.3s ease;
-  margin-left: 40px;
-}
-
-
-.todo-item input[type="date"]:hover {
-  border-color: #007bff; 
-}
 
 
 

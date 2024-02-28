@@ -1,7 +1,7 @@
 <div class="todo-item" *ngIf="todoItem">
   <input type="checkbox" [checked]="todoItem.done" (change)="toggleDone()" />
   <span [ngClass]="{ 'done': todoItem.done }">{{ todoItem.title }}</span>
-  <input type="date" [(ngModel)]="todoItem.dueDate">
+ 
 </div>
 
 
