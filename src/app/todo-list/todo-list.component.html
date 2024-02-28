@@ -26,6 +26,7 @@
     <li *ngFor="let todoItem of filteredTodoItems" class="todo-item">
       <div *ngIf="editingTodoItem && editingTodoItem.id === todoItem.id">
         <input type="text" [(ngModel)]="editingTodoItem.title">
+        <input type="date" [(ngModel)]="editingTodoItem.dueDate">
         <button class="save-button" (click)="saveEditedTodoItem()">Save</button>
         <button class="cancel-button" (click)="cancelEdit()">Cancel</button>
       </div>
