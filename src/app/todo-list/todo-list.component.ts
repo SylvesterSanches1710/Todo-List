@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoItem } from '../todo-item';
 import { TodoApiService } from '../todo-api.service';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-todo-list',
@@ -14,6 +15,7 @@ export class TodoListComponent implements OnInit {
   editingTodoItem: TodoItem | null = null;
   filter: string = 'all';
   searchQuery: string = '';
+  searchIcon = faSearch;
 
   constructor(private todoApiService: TodoApiService) { }
 

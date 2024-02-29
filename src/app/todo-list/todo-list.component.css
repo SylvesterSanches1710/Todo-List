@@ -153,7 +153,6 @@
 }
 
 .filter-container {
-  
   margin-right: 10px; 
 }
 .filter-subheading {
@@ -244,9 +243,7 @@
   transform: translateY(1px);
 }
 
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 10px; /* Adjust as needed */
-  transform: translateY(-50%);
+.search-icon{
+  width: 100%;
+  margin-bottom: 10px;
 }
