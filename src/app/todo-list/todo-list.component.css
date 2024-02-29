@@ -120,9 +120,12 @@
   box-shadow: none;
 }
 
-.edit-button:hover,
-.delete-button:hover {
+.edit-button:hover
+{
   background-color: #45a049; 
+}
+.delete-button:hover {
+  background-color: #fd0d0d; 
 }
 
 .todo-item:hover {
@@ -178,10 +181,12 @@
 .search-container input[type="text"]:focus {
   outline: none; 
   border-color: #f456f7; 
+  
 }
 .search-container {
   flex: 1; 
 }
+
 
 .todo-image {
   position: absolute;
@@ -202,7 +207,7 @@
 
 .save-button{
   margin-left: 10px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   border: none;
   border-radius: 4px;
   background-color: #4CAF50;
@@ -212,7 +217,7 @@
 }
 .cancel-button {
   margin-left: 10px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   border: none;
   border-radius: 4px;
   background-color: #f34d4d;
@@ -221,9 +226,12 @@
   transition: background-color 0.3s ease;
 }
 
-.save-button:hover,
-.cancel-button:hover {
+.save-button:hover{
   background-color: #45a049;
+}
+
+.cancel-button:hover {
+  background-color: #fd0d0d;
 }
 
 .save-button:focus,
@@ -236,3 +244,9 @@
   transform: translateY(1px);
 }
 
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
